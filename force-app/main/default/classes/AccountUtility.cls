@@ -2,6 +2,7 @@ public without sharing class AccountUtility {
   @AuraEnabled
   public static Account createAccount(String name){
       try {
+        // initialize the account
           Account ac = new Account();
           ac.Name = name;
           insert ac;
